@@ -106,6 +106,9 @@
 
 ## 0x04 测试效果与debug🥵
 
+当然少不了播放Bad Apple!!了
+[Bad Apple!!! on EL电致发光显示器_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV12dMSeNEvy)
+
 屏幕尺寸测试
 
 ![display](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/display.jpg)
