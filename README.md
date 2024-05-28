@@ -24,7 +24,7 @@
 
 ​		相信这种迷人的显示效果也受到著名漫画家和导演庵野秀明的喜爱，其作品新世纪福音战士 (又称EVA [ EVANGELION](https://lnk.to/EVA-30_111) ) 中NERV指挥中心的UI大量使用了这种橘黄荧光显示字体和图像，因此EL显示技术也成为EVA美学中重要组成部分。
 
-![Neon Genesis Evangelion E18 Ambivalence.mkv_20240528_160758.578](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/Neon Genesis Evangelion E18 Ambivalence.mkv_20240528_160758.578.jpg)
+![Neon Genesis Evangelion E18 Ambivalence.mkv_20240528_160758.578](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/Neon%20Genesis%20Evangelion%20E18%20Ambivalence.mkv_20240528_160758.578.jpg)
 
 图为EVA中NERV地下要塞作战指挥部
 
@@ -78,7 +78,7 @@
 
 作者查阅了许多EL模组的资料发现，和大多数EL显示模组类似，LJ64HB34模组分为上下两半同时刷新，驱动信号由两组4bit并口以及传输时钟，行场同步信号组成。这一点和传统的逐行扫描方式有着明显区别，相当于同时驱动两块屏幕。
 
-![func diagram](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/func diagram.jpg)
+![func diagram](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/func%20diagram.jpg)
 
 为了顺利地与逐行扫描的HDMI视频信号桥接起来，我们需要两块显存来独立储存上下屏的数据。（当然一块也可以，但是需要别扭地拼接两边像素数据，而且加大编写难度）
 
@@ -96,7 +96,7 @@
 
 以上是项目完整的框图，约束好引脚之后产生比特流便可以上板调试了。
 
-![resource report](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/resource report.jpg)
+![resource report](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/resource%20report.jpg)
 
 功能比较简单，所以资源用的还是比较少的，主要是时钟布线和BRAM消耗较大，直接通过JTAG下载到板子上
 
@@ -122,7 +122,7 @@
 
 第二个是有一路数据电平转换芯片内部失效了，输出间歇性地高电平，所以屏幕产生不规则竖线。解决办法是换芯片。
 
-![ic failure](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/ic failure.jpg)
+![ic failure](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/ic%20failure.jpg)
 
 第三个是比较坑的问题，由于HDMI_EDID的SDA脚需要三态驱动，源文件内部是直接给SDA分配Z电平来实现的，直接RTL顶层综合出来也确实会出现IOBUF。然而当我用Block Design设计时，直接导入此IP不会综合出三态门，无法实现输入。后来查了一下这个是BD本身的问题，解决办法是在ip源文件里用原语手动例化IOBUF。
 
