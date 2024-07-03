@@ -62,11 +62,13 @@
 
 ![a5ccc7b925dc21ed5ce5474637a16a9](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/a5ccc7b925dc21ed5ce5474637a16a9.jpg)
 
-3. 由于EL模组信号电平为5V,所以作者设计了一片PMOD电平转换板，内置了一个5V-12V的DCDC，使用常见的TYPEC接口供电，转接板硬件设计将后续开源
+3. 由于EL模组信号电平为5V,所以作者设计了一片PMOD电平转换板，内置了一个5V-12V的DCDC，使用常见的TYPEC接口供电，转接板硬件设计已开源--20240702
+    ![display](https://github.com/MNDJ666/HDMI2EL/blob/main/hardware/实物仿真图.jpg)
+
 
    ![5ad340ff822214e043d06b9671df2da](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/5ad340ff822214e043d06b9671df2da.jpg)
 
-4. 输出能力至少5V3A的电源适配器一个，由于驱动EL面板需要上百伏的高压，屏幕模组内置了复杂的升压电路，因此屏幕功耗不低，经测试全屏点亮功率为13W。
+5. 输出能力至少5V3A的电源适配器一个，由于驱动EL面板需要上百伏的高压，屏幕模组内置了复杂的升压电路，因此屏幕功耗不低，经测试全屏点亮功率为13W。
 
    
 
