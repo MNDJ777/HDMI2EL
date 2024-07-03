@@ -63,7 +63,7 @@
 ![a5ccc7b925dc21ed5ce5474637a16a9](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/a5ccc7b925dc21ed5ce5474637a16a9.jpg)
 
 3. 由于EL模组信号电平为5V,所以作者设计了一片PMOD电平转换板，内置了一个5V-12V的DCDC，使用常见的TYPEC接口供电，转接板硬件设计已开源--20240702
-    ![display](https://github.com/MNDJ666/HDMI2EL/blob/main/hardware/实物仿真图.jpg)
+    ![display](https://github.com/MNDJ666/HDMI2EL/blob/main/hardware/实物仿真图.png)
 
 
    ![5ad340ff822214e043d06b9671df2da](https://github.com/MNDJ666/HDMI2EL/blob/main/pics/5ad340ff822214e043d06b9671df2da.jpg)
